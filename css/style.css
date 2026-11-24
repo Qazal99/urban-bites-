@@ -1,0 +1,108 @@
+/* CSS Custom Properties / Theme Variables */
+:root {
+  --brown: #2B2118;
+  --orange: #E67E22;
+  --orange-hover: #D35400;
+  --cream: #FFF8EE;
+  --white: #FFFFFF;
+  --dark-grey: #333333;
+}
+
+/* Base Body Styling */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--dark-grey);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* Custom Primary Button Style */
+.btn-urban {
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 24px;
+  border: none;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-urban:hover {
+  background-color: var(--orange-hover);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Navigation Bar Styling */
+.bg-urban-dark {
+  background-color: var(--brown) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--orange);
+}
+
+/* Section Background Variants */
+.bg-cream {
+  background-color: var(--cream);
+}
+
+/* Food & Feature Cards */
+.food-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.food-card img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Carousel Hero Section */
+.hero-slide {
+  height: 82vh;
+  min-height: 480px;
+  position: relative;
+}
+
+.hero-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(43, 33, 24, 0.4), rgba(43, 33, 24, 0.75));
+}
+
+/* Price Badges & Form Styles */
+.price-badge {
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.form-control:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 0.25rem rgba(230, 126, 34, 0.25);
+}

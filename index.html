@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Bites Restaurant | Kampala</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Shared Header & Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-urban-dark sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-white" href="index.html">
+        <i class="bi bi-egg-fried text-warning me-2"></i>Urban Bites
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Our Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="menu.html" class="btn btn-urban">Order Now</a>
+      </div>
+    </div>
+  </nav>
+<!-- Hero Carousel -->
+  <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active hero-slide">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80" alt="Restaurant Ambiance">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-3 fw-bold text-white mb-3">Good Food. Great Moments.</h1>
+          <p class="fs-5 text-white-50 mb-4">Discover delicious meals prepared with passion in Kampala.</p>
+          <a href="menu.html" class="btn btn-urban btn-lg">Explore Our Menu</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item hero-slide">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80" alt="Fresh Food Preparation">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-3 fw-bold text-white mb-3">Fresh Ingredients, Amazing Taste.</h1>
+          <p class="fs-5 text-white-50 mb-4">Every meal is crafted to bring you a memorable dining experience.</p>
+          <a href="menu.html" class="btn btn-urban btn-lg">View Our Menu</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item hero-slide">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80" alt="Dining Table Setup">
+        <div class="carousel-overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+          <h1 class="display-3 fw-bold text-white mb-3">Your Table Is Waiting.</h1>
+          <p class="fs-5 text-white-50 mb-4">Join us for delicious food and unforgettable moments with friends.</p>
+          <a href="contact.html" class="btn btn-urban btn-lg">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </header>
+  <!-- Popular Dishes Section -->
+  <section class="py-5 bg-cream">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark">Popular Dishes</h2>
+        <p class="text-muted">A few client favorites from our daily kitchen menu</p>
+      </div>
+      <div class="row g-4">
+        <!-- Dish Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card food-card h-100">
+            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Grilled Chicken">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Grilled Chicken</h5>
+              <p class="card-text text-muted small flex-grow-1">Marinated half chicken grilled over charcoal, served with seasoned fries.</p>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <span class="price-badge">UGX 28,000</span>
+                <a href="contact.html" class="btn btn-urban btn-sm">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dish Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card food-card h-100">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Beef Burger">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Urban Beef Burger</h5>
+              <p class="card-text text-muted small flex-grow-1">Double beef patty with melted cheese, crisp lettuce, and signature sauce.</p>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <span class="price-badge">UGX 25,000</span>
+                <a href="contact.html" class="btn btn-urban btn-sm">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dish Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card food-card h-100">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Chicken Pizza">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Chicken Pizza</h5>
+              <p class="card-text text-muted small flex-grow-1">Stone-baked crust topped with spiced chicken, bell peppers, and mozzarella.</p>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <span class="price-badge">UGX 35,000</span>
+                <a href="contact.html" class="btn btn-urban btn-sm">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dish Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card food-card h-100">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Garden Salad">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Fresh Garden Salad</h5>
+              <p class="card-text text-muted small flex-grow-1">Crisp organic greens, cherry tomatoes, avocado, and house vinaigrette.</p>
+              <div class="d-flex align-items-center justify-content-between mt-3">
+                <span class="price-badge">UGX 18,000</span>
+                <a href="contact.html" class="btn btn-urban btn-sm">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Why Choose Us -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark">Why Choose Us</h2>
+        <p class="text-muted">We prioritize quality food and comfortable dining</p>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="p-3">
+            <i class="bi bi-flower1 display-5 text-warning mb-3"></i>
+            <h5 class="fw-bold">Fresh Ingredients</h5>
+            <p class="text-muted small">Sourced daily from trusted local farms.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3">
+            <i class="bi bi-person-badge display-5 text-warning mb-3"></i>
+            <h5 class="fw-bold">Skilled Chefs</h5>
+            <p class="text-muted small">Prepared by experienced culinary staff.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3">
+            <i class="bi bi-wallet2 display-5 text-warning mb-3"></i>
+            <h5 class="fw-bold">Affordable Prices</h5>
+            <p class="text-muted small">Great food offered at competitive prices.</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="p-3">
+            <i class="bi bi-heart display-5 text-warning mb-3"></i>
+            <h5 class="fw-bold">Friendly Service</h5>
+            <p class="text-muted small">Welcoming staff ready to assist you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5 bg-urban-dark text-white text-center">
+    <div class="container py-3">
+      <h2 class="fw-bold mb-3">Come Hungry, Leave Happy!</h2>
+      <p class="lead mb-4 text-white-50">Visit us today or place your order online for fast delivery in Kampala.</p>
+      <a href="contact.html" class="btn btn-urban btn-lg">Contact Us</a>
+    </div>
+  </section>
+
+
+<!-- Footer -->  
+<footer class="bg-dark text-white-50 pt-5 pb-3 border-top border-secondary">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3"><i class="bi bi-egg-fried text-warning me-2"></i>Urban Bites</h5>
+          <p class="small">Providing fresh, high-quality meals and welcoming dining experiences in Kampala.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="menu.html" class="text-white-50 text-decoration-none">Our Menu</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-white fw-bold mb-3">Opening Hours</h5>
+          <p class="small mb-1">Monday – Sunday: 7:30 AM – 10:30 PM</p>
+          <p class="small text-warning"><i class="bi bi-geo-alt me-1"></i>Acacia Avenue, Kololo, Kampala</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small">
+        <p class="mb-0">&copy; 2026 Urban Bites Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>  <!-- JS Dependencies -->  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>  <script src="js/script.js"></script></body>
+</html>
